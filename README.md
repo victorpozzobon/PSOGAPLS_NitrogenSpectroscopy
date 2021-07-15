@@ -13,7 +13,7 @@ The whole curated dataset is contained within _Nitrate_Spectra.npy_ (261 measure
 
 ## How to run
 
-__Step 1: determine the most relevant wavelengths__\n
+__Step 1: determine the most relevant wavelengths__
 Run _PSO_GA_Train.py_ (calling _helpFunctions.py_) to run the PSO GA hybrid 1000 times. For each run, it will determine a set of wavelengths allowing to describe the data of the _Nitrate_Spectra_train.npy_ dataset. All the runs are stored in the _Individual_Runs_ folder
 
 __Step 2: sort the wavelengths by occurence__
