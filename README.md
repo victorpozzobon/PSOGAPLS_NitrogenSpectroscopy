@@ -7,24 +7,31 @@ Pozzobon, V., Levasseur, W., Guerin, C. & Perre, P. (2021).
 
 It has been tested sucessfully on July 2021.
 
-WORK IN PROGRESS !!!!!!!
+## Data structure
+
+The whole curated dataset is contained within _Nitrate_Spectra.npy_ (261 measurements). It was randomly split into _Nitrate_Spectra_train.npy_ containing 80 % of the data and _Nitrate_Spectra_valid.npy_ hosting the remaining part. Individual measurements are stored as columns. The 151 first items are the spectrophotometric readings (from 190 to 340 nm), and the two remaining rows are nitrite (152) and nitrate (152) concentrations. 
 
 ## How to run
 
 _Step 1: determine the most relevant wavelengths_
-Run _PSO_GA_Train.py_ (calling _helpFunctions.py_) to run the PSO GA hybrid 2000 times. For each run, it will determine a set of wavelengths allowing to describe the data of the _Nitrate_Sepctra_train.npy_ dataset. 
+
+Run _PSO_GA_Train.py_ (calling _helpFunctions.py_) to run the PSO GA hybrid 2000 times. For each run, it will determine a set of wavelengths allowing to describe the data of the _Nitrate_Spectra_train.npy_ dataset. 
 
 _Step 2: sort the wavelengths by occurence_
+
 Run _Agglomerate_Individual_Run.py_ to sort the wavelengths by occurrence (it will plot a top 10 by default).
 
 _Step 3: determine the adequate number of components_
-By including wavelengths successively, _ScreePlot.py_ produces a scree plot, allowing to determine the relative improvement associated with the addition of an extra wavelength. The PRESS metric is used on the _Nitrate_Sepctra_train.npy_ dataset. Choosing three wavelengths is the optimum in this case. 
+
+By including wavelengths successively, _ScreePlot.py_ produces a scree plot, allowing to determine the relative improvement associated with the addition of an extra wavelength. The PRESS metric is used on the _Nitrate_Spectra_train.npy_ dataset. Choosing three wavelengths is the optimum in this case. 
 
 _Step 4: brute force_
-_BruteForce.py_ tests all the possible combinations of three wavelengths. At this point, we should have a good idea of which wavelengths are going to win. The objective is to confirm it. For this, we are still using the training dataset (_Nitrate_Sepctra_train.npy_). 
+
+_BruteForce.py_ tests all the possible combinations of three wavelengths. At this point, we should have a good idea of which wavelengths are going to win. The objective is to confirm it. For this, we are still using the training dataset (_Nitrate_Spectra_train.npy_). 
 
 _Step 5: validation_
-The produced equations are finally tested on the validation dataset (_Nitrate_Sepctra_valid.npy_) and plotted. To do so, run _Validation.py_. 
+
+The produced equations are finally tested on the validation dataset (_Nitrate_Spectra_valid.npy_) and plotted. To do so, run _Validation.py_. 
 
 Here is a picture of the results
 ![Image not found](./Results.png?raw=true)
