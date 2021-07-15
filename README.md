@@ -9,11 +9,9 @@ It has been tested sucessfully on July 2021.
 
 WORK IN PROGRESS !!!!!!!
 
-## Structure
+## How to run
 
-You can find the solver to compile in the *simpleThermFoam_solver* folder.
-The associated tutorial can be found in *simpleThermFoam_tutorial/heatTransferSingleSphere*. It features a single sphere and the surrounding flow. The sphere exprience a temperature dependent heat realease that heats it up as well as the sweeping air.  
-Please note that this example is a simplication of the case presented in the article. Its sole purpose is to run on a desktop (still in parallel) so that you can try it.
+_Step 1_
 
 ## Contact
 
