@@ -1,9 +1,9 @@
-# PSOGAPLS_Nitrogen Spectroscopy
+# Particle Swarm & Genetic Algorithm Optimizer associated with Partial Least Square for nitrate and nitrite spectroscopic quantification 
 
-Repository hosting the OpenFOAM solver and tutorial associated with the article: 
-[Numerical determination of the volumetric heat transfer coefficient in fixed beds of wood chips.](https://www.sciencedirect.com/science/article/abs/pii/S1385894720341140) 
-Sassanis, V., Gamet, L., Rolland, M., Ma, R., &amp; Pozzobon, V. (2020). 
-*Chemical Engineering Journal*, 128009.
+Repository hosting the Python codes and data associated with the article: 
+[Nitrate and nitrite as mixed source of nitrogen for Chlorella vulgaris: fast nitrogen quantification using spectrophotometer and machine learning.](https://www.springer.com/journal/10811) 
+Pozzobon, V., Levasseur, W., Guerin, C. & Perre, P. (2021). 
+*Journal of Applied Phycology*, 1-9. [(Preprint)](/assets/preprints/Pozzobon_2021_b.pdf)
 
 It has been tested sucessfully on July 2021.
 
@@ -14,18 +14,6 @@ WORK IN PROGRESS !!!!!!!
 You can find the solver to compile in the *simpleThermFoam_solver* folder.
 The associated tutorial can be found in *simpleThermFoam_tutorial/heatTransferSingleSphere*. It features a single sphere and the surrounding flow. The sphere exprience a temperature dependent heat realease that heats it up as well as the sweeping air.  
 Please note that this example is a simplication of the case presented in the article. Its sole purpose is to run on a desktop (still in parallel) so that you can try it.
-
-You can run the code with *Allrun* script and clean it with *Allclean*.
-
-## Postprocessing
-
-Here are two examples of vizualisations procuded with this tutorial.
-
-Temperature field in the air and the sphere as well as streamlines (colored by velocity)
-![Image not found](./Postprocessing_1.png?raw=true)
-
-Inner sphere temperature field
-![Image not found](./Postprocessing_2.png?raw=true)
 
 ## Contact
 
