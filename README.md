@@ -3,7 +3,7 @@
 Repository hosting the Python codes and data associated with the article: 
 [Nitrate and nitrite as mixed source of nitrogen for Chlorella vulgaris: fast nitrogen quantification using spectrophotometer and machine learning.](https://www.springer.com/journal/10811) 
 Pozzobon, V., Levasseur, W., Guerin, C. & Perre, P. (2021). 
-*Journal of Applied Phycology*, 1-9. [(Preprint)](/assets/preprints/Pozzobon_2021_b.pdf)
+*Journal of Applied Phycology*, 1-9. [(Preprint)](https://victorpozzobon.github.io/assets/preprints/Pozzobon_2021_b.pdf)
 
 It has been tested sucessfully on July 2021.
 
