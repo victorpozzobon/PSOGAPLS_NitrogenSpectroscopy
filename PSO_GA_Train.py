@@ -109,7 +109,7 @@ for i in range(0, nbParticle):
 # Data loading #
 ################
 
-Data_Reduced = loadData(nbParam, filename="Nitrate_Spectra_train.npy")
+Data_Reduced = loadData(nbParam, filename="Data/Nitrate_Spectra_train.npy")
 
 ######################
 # Starting main loop #

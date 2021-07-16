@@ -16,7 +16,7 @@ Journal of Applied Phycology, 1-9.
 '''
 Loading the data
 '''
-def loadData(nbParam, filename = "Nitrate_Spectra.npy"):
+def loadData(nbParam, filename = "Data/Nitrate_Spectra.npy"):
     import numpy as np
     Data = np.load(filename)
     nfile = np.size(Data[0])

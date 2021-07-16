@@ -25,7 +25,7 @@ def PRESS(m, nbParticle, nbParam):
     import numpy as np
     
     # Loading data
-    Data_train = np.load("Nitrate_Spectra_train.npy")
+    Data_train = np.load("Data/Nitrate_Spectra_train.npy")
     X = Data_train[:-2, :][m[:-1,0]>0.5]
     Y = Data_train[-2:, :]
     
@@ -61,7 +61,7 @@ startTime = time.time()
 import matplotlib.pyplot as plt
 
 # The wavelength sorted by occurence (highest first)
-retainedWL = [6,44,11,10,9,46,45,34,56,30] # Attention: use indexes
+retainedWL = [6,44,34,11,10,9,56,45,16,46] # Attention: use indexes
 
 # Number of feature / wavelength
 nbParam = 151
@@ -85,7 +85,7 @@ plt.xlabel('Number of components')
 plt.ylabel('PRESS')
 plt.legend()
 
-np.savetxt("PRESS_vs_Component.txt", np.transpose([n_comp, MSE_Train]), header="ncom TrainSetGap")
+np.savetxt("Results/PRESS_vs_Component.txt", np.transpose([n_comp, MSE_Train]), header="ncom TrainSetGap")
 
 endTime = time.time()
 print('\nExecution time : {:3.2f} s'.format((endTime - startTime)))

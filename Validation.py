@@ -26,10 +26,10 @@ import numpy as np
 
 
 # Loading the best set of wavelengths
-m = np.genfromtxt("Brute_force_last.txt")
+m = np.genfromtxt("Results/Brute_force_last.txt")
 
 # Training PLS
-Data_train = np.load("Nitrate_Spectra_train.npy")
+Data_train = np.load("Data/Nitrate_Spectra_train.npy")
 X = Data_train[:-2, :][m[:-2]>0.5]
 Y = Data_train[-2:, :]
 
@@ -37,15 +37,15 @@ pls = PLSRegression(n_components = 3)
 pls.fit(np.transpose(X), np.transpose(Y))
 
 # Validating
-Data_valid = np.load("Nitrate_Spectra_valid.npy")
+Data_valid = np.load("Data/Nitrate_Spectra_valid.npy")
 X = Data_valid[:-2, :][m[:-2]>0.5]
 Y = Data_valid[-2:, :]
 Y_pred = pls.predict(np.transpose(X))
 Y = np.transpose(Y)
 
 # Saving data for reuse or plot in another software
-np.savetxt('Data_validation.txt', Y)
-np.savetxt('Data_prediction.txt', Y_pred)
+np.savetxt('Results/Data_validation.txt', Y)
+np.savetxt('Results/Data_prediction.txt', Y_pred)
 
 ########################
 # Plotting the results #
@@ -149,7 +149,7 @@ plt.ylabel('Frequency (%)')
 
 # Saving the graphs
 plt.tight_layout()    
-plt.savefig("Results.png", dpi= 600)
+plt.savefig("Results/Results.png", dpi= 600)
 
 #########################
 # Computing some values #
