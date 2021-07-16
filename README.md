@@ -1,7 +1,7 @@
 # Particle Swarm & Genetic Algorithm Optimizer associated with Partial Least Square for nitrate and nitrite spectroscopic quantification 
 
 Repository hosting the Python codes and data associated with the article: 
-[Nitrate and nitrite as mixed source of nitrogen for Chlorella vulgaris: fast nitrogen quantification using spectrophotometer and machine learning.](https://www.springer.com/journal/10811) 
+[Nitrate and nitrite as mixed source of nitrogen for _Chlorella vulgaris_: fast nitrogen quantification using spectrophotometer and machine learning.](https://www.springer.com/journal/10811) 
 Pozzobon, V., Levasseur, W., Guerin, C. & Perre, P. (2021). 
 *Journal of Applied Phycology*, 1-9. [(Preprint)](https://victorpozzobon.github.io/assets/preprints/Pozzobon_2021_b.pdf)
 
@@ -15,7 +15,7 @@ The whole curated dataset is contained within _Nitrate_Spectra.npy_ (261 measure
 
 __Step 1: determine the most relevant wavelengths__
 
-Run _PSO_GA_Train.py_ (calling _helpFunctions.py_) to run the PSO GA hybrid 1000 times. For each run, it will determine a set of wavelengths allowing to describe the data of the _Nitrate_Spectra_train.npy_ dataset. All the runs are stored in the _Individual_Runs_ folder
+Run _PSO_GA_Train.py_ (calling _helpFunctions.py_) to run the PSO GA hybrid 1000 times. For each run, it will determine a set of wavelengths allowing to describe the data of the _Nitrate_Spectra_train.npy_ dataset. All the runs are stored in the _Individual_Runs_ folder. For testing purposes, mine are stored in the archive _Run\_n.tar.xz_ in the _Individual_Runs_ folder.
 
 __Step 2: sort the wavelengths by occurence__
 
