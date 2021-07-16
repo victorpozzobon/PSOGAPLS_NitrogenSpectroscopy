@@ -9,7 +9,7 @@ It has been tested sucessfully on July 2021.
 
 ## Data structure
 
-The whole curated dataset is contained within _Nitrate_Spectra.npy_ (261 measurements). It was randomly split into _Nitrate_Spectra_train.npy_ containing 80 % of the data and _Nitrate_Spectra_valid.npy_ hosting the remaining part. Individual measurements are stored as columns. The 151 first items are the spectrophotometric readings (from 190 to 340 nm), and the two remaining rows are nitrite (item 152) and nitrate (item 153) concentrations. 
+The whole curated dataset is contained within _Nitrate_Spectra.npy_ (261 measurements). It was randomly split into _Nitrate_Spectra_train.npy_ containing 80 % of the data and _Nitrate_Spectra_valid.npy_ hosting the remaining part. Individual measurements are stored as columns. The 151 first items are the spectrophotometric readings (from 190 to 340 nm), and the two remaining rows are nitrite (item 152) and nitrate (item 153) concentrations. Files are available in the _Data_ folder.
 
 ## How to run
 
@@ -33,8 +33,9 @@ __Step 5: validation__
 
 The produced equations are finally tested on the validation dataset (_Nitrate_Spectra_valid.npy_) and plotted. To do so, run _Validation.py_. 
 
-Here is a picture of the results
-![Image not found](./Results.png?raw=true)
+All the results files are stored within the _Results_ folder. Here is a picture of the final validation. 
+
+![Image not found](./Results/Results.png?raw=true)
 
 ## Contact
 
