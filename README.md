@@ -1,4 +1,4 @@
-# Particle Swarm & Genetic Algorithm Optimizer associated with Partial Least Square for nitrate and nitrite spectroscopic quantification 
+# Particle Swarm & Genetic Algorithm Optimizer associated with Partial Least Square Regression for nitrate and nitrite spectroscopic quantification 
 
 Repository hosting the Python codes and data associated with the article: 
 [Nitrate and nitrite as mixed source of nitrogen for _Chlorella vulgaris_: fast nitrogen quantification using spectrophotometer and machine learning.](https://www.springer.com/journal/10811) 
