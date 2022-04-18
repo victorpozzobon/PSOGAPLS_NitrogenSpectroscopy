@@ -37,6 +37,10 @@ All the results files are stored within the _Results_ folder. Here is a picture 
 
 ![Image not found](./Results/Results.png?raw=true)
 
+__Comment__
+
+After some additional work on an unrelated project, I realized that my implementation of the PSO GA hybrid was not identical to the one in the article I am referring to. While it is undoubtedly suboptimal compared to Gong's proposal, it is functional. Therefore, for the sake of reproducibility, I decided to leave the flawed version online. Still, I shall publish the properly implemented version in another repository associated with another work requiring an efficient optimization procedure.
+
 ## Contact
 
 Please feel free to contact me. You can find my details on: https://victorpozzobon.github.io/
