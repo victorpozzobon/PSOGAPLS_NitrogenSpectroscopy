@@ -5,7 +5,7 @@ Repository hosting the Python codes (please be kind with the typos in the commen
 Pozzobon, V., Levasseur, W., Guerin, C. & Perre, P. (2021). 
 *Journal of Applied Phycology*, 1-9. [(Preprint)](https://victorpozzobon.github.io/assets/preprints/Pozzobon_2021_b.pdf)
 
-It has been tested sucessfully on July 2021.
+It has been tested successfully on July 2021.
 
 ## Data structure
 
