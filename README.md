@@ -1,7 +1,7 @@
 # Particle Swarm & Genetic Algorithm Optimizer associated with Partial Least Square Regression for nitrate and nitrite spectroscopic quantification 
 
 Repository hosting the Python codes (please be kind with the typos in the comments) and data associated with the article: 
-[Nitrate and nitrite as mixed source of nitrogen for _Chlorella vulgaris_: fast nitrogen quantification using spectrophotometer and machine learning.](https://www.springer.com/journal/10811) 
+[Nitrate and nitrite as mixed source of nitrogen for _Chlorella vulgaris_: fast nitrogen quantification using spectrophotometer and machine learning.](https://link.springer.com/article/10.1007/s10811-021-02422-2) 
 Pozzobon, V., Levasseur, W., Guerin, C. & Perre, P. (2021). 
 *Journal of Applied Phycology*, 1-9. [(Preprint)](https://victorpozzobon.github.io/assets/preprints/Pozzobon_2021_b.pdf)
 
